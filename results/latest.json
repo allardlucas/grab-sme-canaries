@@ -1,0 +1,40 @@
+{
+  "status": "not_run",
+  "model": null,
+  "reason": "Aucune clé API LLM (OPENAI_API_KEY, ANTHROPIC_API_KEY, ou équivalent OpenAI-compatible) n'était présente dans l'environnement. Les taux restent nuls : aucun chiffre n'a été inventé.",
+  "a_abstain_rate": {
+    "P0": null,
+    "P1": null
+  },
+  "qc_abstain_rate": {
+    "P0": null,
+    "P1": null
+  },
+  "qc_violation_rate": {
+    "P0": null,
+    "P1": null
+  },
+  "qc_echo_rate": {
+    "P0": null,
+    "P1": null
+  },
+  "mean_q": {
+    "overall": {
+      "P0": null,
+      "P1": null
+    },
+    "A": {
+      "P0": null,
+      "P1": null
+    },
+    "QC": {
+      "P0": null,
+      "P1": null
+    }
+  },
+  "q0_abstain_rate": {
+    "P0": null,
+    "P1": null
+  },
+  "n_trials": null
+}

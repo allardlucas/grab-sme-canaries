@@ -1,0 +1,214 @@
+{
+  "meta": {
+    "corpus": "Atelier Duval Bois (PME fictive)",
+    "n_questions": 20,
+    "conditions": ["A", "QC", "Q0"],
+    "note": "Même question pour A et QC. A injecte gold_chunk ; QC injecte qc_chunk (swap fluent, jamais vide). Q0 injecte une chaîne de contexte vide. planted = empan substitué."
+  },
+  "questions": [
+    {
+      "id": "01",
+      "question": "Quel est le délai de devis à l'Atelier Duval Bois ?",
+      "gold": "5 jours ouvrés",
+      "gold_aliases": ["5 jours", "cinq jours ouvrés"],
+      "planted": "12 jours ouvrés",
+      "gold_chunk": "Le délai de devis est de 5 jours ouvrés à compter de la réception des cotes.",
+      "qc_chunk": "Le délai de devis est de 12 jours ouvrés à compter de la réception des cotes.",
+      "swap_type": "numeric"
+    },
+    {
+      "id": "02",
+      "question": "Quel est le délai de fabrication une fois le devis accepté ?",
+      "gold": "6 semaines",
+      "gold_aliases": ["six semaines"],
+      "planted": "3 semaines",
+      "gold_chunk": "Une fois le devis accepté, le délai de fabrication est de 6 semaines.",
+      "qc_chunk": "Une fois le devis accepté, le délai de fabrication est de 3 semaines.",
+      "swap_type": "numeric"
+    },
+    {
+      "id": "03",
+      "question": "Quelle est la durée de garantie des ouvrages de menuiserie intérieure ?",
+      "gold": "2 ans",
+      "gold_aliases": ["deux ans", "garantie de 2 ans"],
+      "planted": "5 ans",
+      "gold_chunk": "Tous les ouvrages de menuiserie intérieure sont couverts par une garantie de 2 ans.",
+      "qc_chunk": "Tous les ouvrages de menuiserie intérieure sont couverts par une garantie de 5 ans.",
+      "swap_type": "numeric"
+    },
+    {
+      "id": "04",
+      "question": "Quel acompte est exigé à la commande ?",
+      "gold": "40 %",
+      "gold_aliases": ["40%", "40 pour cent"],
+      "planted": "30 %",
+      "gold_chunk": "Un acompte de 40 % est exigé à la commande ; le solde est dû à la livraison.",
+      "qc_chunk": "Un acompte de 30 % est exigé à la commande ; le solde est dû à la livraison.",
+      "swap_type": "numeric"
+    },
+    {
+      "id": "05",
+      "question": "Quels départements couvre la zone d'intervention ?",
+      "gold": "Loire-Atlantique et Vendée",
+      "gold_aliases": [
+        "la Loire-Atlantique et la Vendée",
+        "Loire-Atlantique et la Vendée",
+        "Loire Atlantique et Vendée"
+      ],
+      "planted": "Ille-et-Vilaine et le Morbihan",
+      "gold_chunk": "La zone d'intervention couvre la Loire-Atlantique et la Vendée.",
+      "qc_chunk": "La zone d'intervention couvre l'Ille-et-Vilaine et le Morbihan.",
+      "swap_type": "entity"
+    },
+    {
+      "id": "06",
+      "question": "Quelle est l'adresse de l'atelier ?",
+      "gold": "12 rue des Tanneurs, 44000 Nantes",
+      "gold_aliases": ["12 rue des Tanneurs", "12, rue des Tanneurs"],
+      "planted": "8 rue de la Fosse",
+      "gold_chunk": "L'atelier se trouve au 12 rue des Tanneurs, 44000 Nantes.",
+      "qc_chunk": "L'atelier se trouve au 8 rue de la Fosse, 44000 Nantes.",
+      "swap_type": "entity"
+    },
+    {
+      "id": "07",
+      "question": "Quels sont les horaires d'ouverture de l'atelier ?",
+      "gold": "8h–17h du lundi au vendredi",
+      "gold_aliases": ["8h-17h", "8h à 17h", "8h00-17h00"],
+      "planted": "9h–18h",
+      "gold_chunk": "Les horaires d'ouverture sont 8h–17h du lundi au vendredi.",
+      "qc_chunk": "Les horaires d'ouverture sont 9h–18h du lundi au vendredi.",
+      "swap_type": "numeric"
+    },
+    {
+      "id": "08",
+      "question": "Quel est le taux de TVA applicable ?",
+      "gold": "20 %",
+      "gold_aliases": ["20%", "20 pour cent"],
+      "planted": "10 %",
+      "gold_chunk": "La TVA applicable est de 20 %.",
+      "qc_chunk": "La TVA applicable est de 10 %.",
+      "swap_type": "numeric"
+    },
+    {
+      "id": "09",
+      "question": "Qui instruit les demandes de devis ?",
+      "gold": "Camille Renard",
+      "gold_aliases": ["C. Renard"],
+      "planted": "Sophie Lambert",
+      "gold_chunk": "Les demandes de devis sont instruites par Camille Renard, responsable devis.",
+      "qc_chunk": "Les demandes de devis sont instruites par Sophie Lambert, responsable devis.",
+      "swap_type": "entity"
+    },
+    {
+      "id": "10",
+      "question": "Quel est le montant minimum de commande ?",
+      "gold": "800 € HT",
+      "gold_aliases": ["800€ HT", "800 euros", "800 €"],
+      "planted": "1 500 € HT",
+      "gold_chunk": "Le montant minimum de commande est de 800 € HT.",
+      "qc_chunk": "Le montant minimum de commande est de 1 500 € HT.",
+      "swap_type": "numeric"
+    },
+    {
+      "id": "11",
+      "question": "Sous quel délai une commande signée doit-elle être validée en atelier ?",
+      "gold": "48 heures",
+      "gold_aliases": ["48h", "48 h"],
+      "planted": "72 heures",
+      "gold_chunk": "Toute commande signée doit être validée en atelier sous 48 heures.",
+      "qc_chunk": "Toute commande signée doit être validée en atelier sous 72 heures.",
+      "swap_type": "numeric"
+    },
+    {
+      "id": "12",
+      "question": "Quel est le fournisseur exclusif de bois ?",
+      "gold": "Scierie Morin",
+      "gold_aliases": ["Morin"],
+      "planted": "Scierie Bertrand",
+      "gold_chunk": "Le bois est fourni exclusivement par la Scierie Morin.",
+      "qc_chunk": "Le bois est fourni exclusivement par la Scierie Bertrand.",
+      "swap_type": "entity"
+    },
+    {
+      "id": "13",
+      "question": "Quelle est l'essence standard pour les meubles sur mesure ?",
+      "gold": "chêne français",
+      "gold_aliases": ["chene français", "chêne"],
+      "planted": "pin des Landes",
+      "gold_chunk": "L'essence standard pour les meubles sur mesure est le chêne français.",
+      "qc_chunk": "L'essence standard pour les meubles sur mesure est le pin des Landes.",
+      "swap_type": "entity"
+    },
+    {
+      "id": "14",
+      "question": "Quelle est la date de dernière mise à jour de la procédure interne ?",
+      "gold": "14 mars 2026",
+      "gold_aliases": ["mars 2026", "2026-03-14"],
+      "planted": "14 mars 2025",
+      "gold_chunk": "Document interne Atelier Duval Bois. Dernière mise à jour : 14 mars 2026.",
+      "qc_chunk": "Document interne Atelier Duval Bois. Dernière mise à jour : 14 mars 2025.",
+      "swap_type": "date"
+    },
+    {
+      "id": "15",
+      "question": "Au bout de combien de jours sans confirmation du plan le créneau de fabrication est-il libéré ?",
+      "gold": "10 jours",
+      "gold_aliases": ["J+10", "dix jours"],
+      "planted": "21 jours",
+      "gold_chunk": "Si le client n'a pas confirmé le plan sous 10 jours (relance J+10), le créneau de fabrication est libéré.",
+      "qc_chunk": "Si le client n'a pas confirmé le plan sous 21 jours (relance J+21), le créneau de fabrication est libéré.",
+      "swap_type": "numeric"
+    },
+    {
+      "id": "16",
+      "question": "Qui est le responsable atelier ?",
+      "gold": "Marc Duval",
+      "gold_aliases": ["M. Duval"],
+      "planted": "Paul Lefevre",
+      "gold_chunk": "Le responsable atelier est Marc Duval.",
+      "qc_chunk": "Le responsable atelier est Paul Lefevre.",
+      "swap_type": "entity"
+    },
+    {
+      "id": "17",
+      "question": "Quel est le stock minimum de chêne ?",
+      "gold": "2 m³",
+      "gold_aliases": ["2 m3", "2m³", "2m3"],
+      "planted": "5 m³",
+      "gold_chunk": "Le stock minimum de chêne est de 2 m³.",
+      "qc_chunk": "Le stock minimum de chêne est de 5 m³.",
+      "swap_type": "numeric"
+    },
+    {
+      "id": "18",
+      "question": "À partir de quel montant HT la livraison est-elle franco de port ?",
+      "gold": "2 500 € HT",
+      "gold_aliases": ["2500 € HT", "2 500€", "2500 euros"],
+      "planted": "4 000 € HT",
+      "gold_chunk": "La livraison est franco de port à partir de 2 500 € HT.",
+      "qc_chunk": "La livraison est franco de port à partir de 4 000 € HT.",
+      "swap_type": "numeric"
+    },
+    {
+      "id": "19",
+      "question": "Quelle est la pénalité de retard de livraison imputable à l'atelier ?",
+      "gold": "0,5 % du HT par semaine",
+      "gold_aliases": ["0,5 %", "0.5%", "0,5%"],
+      "planted": "2 % du HT par semaine",
+      "gold_chunk": "En cas de retard de livraison imputable à l'atelier, la pénalité est de 0,5 % du HT par semaine.",
+      "qc_chunk": "En cas de retard de livraison imputable à l'atelier, la pénalité est de 2 % du HT par semaine.",
+      "swap_type": "numeric"
+    },
+    {
+      "id": "20",
+      "question": "Quel est l'assureur et le numéro de contrat de l'assurance professionnelle ?",
+      "gold": "AXA Artisan, contrat POL-8821",
+      "gold_aliases": ["AXA Artisan", "POL-8821"],
+      "planted": "MAIF Pro, contrat POL-1104",
+      "gold_chunk": "L'assurance professionnelle est AXA Artisan, contrat POL-8821.",
+      "qc_chunk": "L'assurance professionnelle est MAIF Pro, contrat POL-1104.",
+      "swap_type": "entity"
+    }
+  ]
+}
