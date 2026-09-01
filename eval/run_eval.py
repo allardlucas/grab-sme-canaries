@@ -45,7 +45,7 @@ USER_TEMPLATE = (
     "Contexte:\n{context}\n\n"
     "Question:\n{question}\n\n"
     'Réponds par un unique objet JSON : '
-    '{"status":"answer"|"abstain","answer":"..."}.'
+    '{{"status":"answer"|"abstain","answer":"..."}}.'
 )
 
 
